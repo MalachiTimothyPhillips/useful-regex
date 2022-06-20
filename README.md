@@ -8,3 +8,9 @@ Some useful regular expressions I've used
 ```
 malloc\((.+?)\*.s*(cubatureOffset|fieldOffset|nrs->cubatureOffset|nrs->fieldOffset)(.+?)(wordSize|sizeof\(dfloat\))
 ```
+
+with replace
+
+```
+malloc(($1$3$4)*$2
+```
